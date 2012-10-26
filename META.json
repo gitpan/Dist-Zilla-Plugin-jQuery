@@ -1,0 +1,56 @@
+{
+   "abstract" : "Include jQuery in your distribution",
+   "author" : [
+      "Graham Ollis <perl@wdlabs.com>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Dist-Zilla-Plugin-jQuery",
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.30"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Dist::Zilla::Role::FileGatherer" : "0",
+            "File::HomeDir" : "0",
+            "File::Temp" : "0",
+            "Moose" : "0",
+            "Moose::Util::TypeConstraints" : "0",
+            "Path::Class" : "0.26",
+            "Resource::Pack::jQuery" : "0",
+            "namespace::autoclean" : "0",
+            "perl" : "v5.10.0",
+            "strict" : "0",
+            "warnings" : "0"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Test::More" : "0"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/plicease/Dist-Zilla-Plugin-jQuery/issues"
+      },
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/plicease/Dist-Zilla-Plugin-jQuery.git",
+         "web" : "https://github.com/plicease/Dist-Zilla-Plugin-jQuery"
+      }
+   },
+   "version" : "0.01"
+}
+
