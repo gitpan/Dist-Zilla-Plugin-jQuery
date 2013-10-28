@@ -1,4 +1,7 @@
 Revision history for Dist-Zilla-Plugin-jQuery
 
+0.02      2013-10-28 11:57:05 -0400
+  - read and write in unicode
+
 0.01      2012-10-26 11:43:11 America/New_York
-- initial version
+  - initial version

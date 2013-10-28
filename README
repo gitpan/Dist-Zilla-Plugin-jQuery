@@ -2,7 +2,7 @@ NAME
     Dist::Zilla::Plugin::jQuery - Include jQuery in your distribution
 
 VERSION
-    version 0.01
+    version 0.02
 
 SYNOPSIS
      [jQuery]
@@ -56,7 +56,7 @@ METHODS
 CAVEATS
     If you bundle jQuery into your distribution, you should update the
     copyright section to include a notice that bundled copy of jQuery is
-    copyright the jQuery Project and is licensed under eitherthe MIT or
+    copyright the jQuery Project and is licensed under either the MIT or
     GPLv2 license. This module does not bundle jQuery, but its dependency
     Resource::Pack::jQuery does.
 

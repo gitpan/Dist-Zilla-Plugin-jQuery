@@ -8,6 +8,8 @@ Makefile.PL
 README
 dist.ini
 lib/Dist/Zilla/Plugin/jQuery.pm
+t/00_diag.t
+t/00_diag.txt
 t/use.t
 xt/release/build_environment.t
 xt/release/changes.t
@@ -20,3 +22,4 @@ xt/release/pod_spelling_common.t
 xt/release/pod_spelling_system.t
 xt/release/release.yml
 xt/release/strict.t
+xt/release/version.t

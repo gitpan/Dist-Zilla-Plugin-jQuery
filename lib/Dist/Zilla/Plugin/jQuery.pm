@@ -15,7 +15,7 @@ with 'Dist::Zilla::Role::FileGatherer';
 use namespace::autoclean;
 
 # ABSTRACT: Include jQuery in your distribution
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 
 has version => (
@@ -124,7 +124,7 @@ sub gather_files
     {
       $self->add_file(
         Dist::Zilla::File::InMemory->new(
-          content => scalar $child->slurp,
+          content => scalar $child->slurp(iomode => '<:encoding(UTF-8)'),
           name    => dir( $self->dir )->file( $child->basename )->stringify,
         ),
       );
@@ -133,7 +133,7 @@ sub gather_files
     {
       my $file = $self->zilla->root->file( $self->dir, $child->basename );
       $file->parent->mkpath(0, 0755);
-      $file->spew( scalar $child->slurp );
+      $file->spew( iomode => '>:encoding(UTF-8)', scalar $child->slurp(iomode => '<:encoding(UTF-8)') );
     }
   }
   return;
@@ -153,7 +153,7 @@ Dist::Zilla::Plugin::jQuery - Include jQuery in your distribution
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -229,13 +229,15 @@ This method places the fetched jQuery sources into your distribution.
 
 If you bundle jQuery into your distribution, you should update the copyright
 section to include a notice that bundled copy of jQuery is copyright
-the jQuery Project and is licensed under eitherthe MIT or GPLv2 license.
+the jQuery Project and is licensed under either the MIT or GPLv2 license.
 This module does not bundle jQuery, but its dependency L<Resource::Pack::jQuery>
 does.
 
 =head1 SEE ALSO
 
 L<Resource::Pack::jQuery>
+
+=cut
 
 =head1 AUTHOR
 

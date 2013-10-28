@@ -4,7 +4,7 @@
       "Graham Ollis <perl@wdlabs.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 4.300039, CPAN::Meta::Converter version 2.132830",
    "license" : [
       "perl_5"
    ],
@@ -29,9 +29,7 @@
             "Path::Class" : "0.26",
             "Resource::Pack::jQuery" : "0",
             "namespace::autoclean" : "0",
-            "perl" : "v5.10.0",
-            "strict" : "0",
-            "warnings" : "0"
+            "perl" : "v5.10.0"
          }
       },
       "test" : {
@@ -43,14 +41,15 @@
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/plicease/Dist-Zilla-Plugin-jQuery/issues"
+         "web" : "https://github.com/plicease/dist-zilla-plugin-jquery/issues"
       },
+      "homepage" : "http://perl.wdlabs.com/Dist-Zilla-Plugin-jQuery/",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/plicease/Dist-Zilla-Plugin-jQuery.git",
-         "web" : "https://github.com/plicease/Dist-Zilla-Plugin-jQuery"
+         "url" : "git://github.com/plicease/dist-zilla-plugin-jquery.git",
+         "web" : "https://github.com/plicease/dist-zilla-plugin-jquery"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
 
