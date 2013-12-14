@@ -2,7 +2,6 @@ package Dist::Zilla::Plugin::jQuery;
 
 use strict;
 use warnings;
-use v5.10;
 use Moose;
 use Resource::Pack::jQuery;
 use File::Temp qw( tempdir );
@@ -15,7 +14,7 @@ with 'Dist::Zilla::Role::FileGatherer';
 use namespace::autoclean;
 
 # ABSTRACT: Include jQuery in your distribution
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 
 has version => (
@@ -147,13 +146,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 Dist::Zilla::Plugin::jQuery - Include jQuery in your distribution
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 

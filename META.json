@@ -4,7 +4,7 @@
       "Graham Ollis <perl@wdlabs.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300039, CPAN::Meta::Converter version 2.132830",
+   "generated_by" : "Dist::Zilla version 5.006, CPAN::Meta::Converter version 2.133380",
    "license" : [
       "perl_5"
    ],
@@ -29,7 +29,7 @@
             "Path::Class" : "0.26",
             "Resource::Pack::jQuery" : "0",
             "namespace::autoclean" : "0",
-            "perl" : "v5.10.0"
+            "perl" : "5.006"
          }
       },
       "test" : {
@@ -50,6 +50,6 @@
          "web" : "https://github.com/plicease/dist-zilla-plugin-jquery"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }
 
